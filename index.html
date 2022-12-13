@@ -1,0 +1,1184 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>MY PROFILE</title> 
+    <link rel="stylesheet"
+          href="https://fonts.googleapis.com/css?family=Kanit" >
+    
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.1.1/css/all.min.css" integrity="sha512-KfkfwYDsLkIlwQp6LFnl8zNdLGxu9YAA1QvwINks4PhcElQSvqcyVLLD9aMhXd13uQjoXtEKNosOWaZqXgel0g==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    
+    <style>
+
+
+
+
+
+
+
+        @import url('https://fonts.googleapis.com/css2?family=Noto+Sans+Thai:wght@800&display=swap');
+
+        
+*{
+    margin: 0;
+    padding: 0;
+    scroll-behavior: smooth;
+}
+body{
+    touch-action: pan-y;
+    font-family: 'Noto Sans Thai', sans-serif;
+}
+#Whoami{
+    
+    height: 1000px;
+}
+.title{
+    
+    display: flex;
+    justify-content:center;
+    align-items:center;
+    background-image: linear-gradient(90deg, rgba(25, 136, 247, 1) 0%, rgba(247, 25, 136, 1) 100%);
+    
+}
+
+.title > h1{
+    
+    padding: 5rem;
+    color: rgb(255, 255, 255);
+    font-size: 200px;
+    
+    
+}
+
+.nava{
+    font-size: 1.2rem;
+}
+.nava:hover{
+    font-size: 1.5rem;
+    color: #ffeb50;
+}
+
+
+
+
+
+
+
+
+.bar{
+    margin-right: 1rem;
+}
+
+.bar > i{
+    display: none;
+}
+.navinfo{
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    right: 0px;
+    z-index: 99;
+    background-color: #ef4e23;
+    height: 110px;
+    color: rgb(255, 255, 255);
+    display: flex;
+    justify-content: space-between;
+    align-items:center;
+    transition: top 0.3s ease-out;
+    box-shadow: 2px -1px 10px 10px rgba(0, 0, 0, 0.42);
+
+}
+#videoBG{
+    margin-top: 0rem;
+    
+    position: absolute;
+    z-index: -1;
+    width: 100%;
+    height: 1000px;
+    margin-left: 0;
+    
+}
+
+
+.go{
+    margin-left: 0.8rem;
+    margin-top: 0.5rem;
+    margin-right: 30rem;
+    width: 90px;
+}
+.navinfo > h1{
+    
+    margin-left: 1rem;
+}
+.navinfo.hide{
+    top: -110px;
+}
+
+
+.navinfo a {
+    background-color: #ef4e23;
+    color: rgb(255, 255, 255);
+    text-decoration: none;
+    transition-property:color,font-size;
+    transition:  0.2s ease-out;
+    margin-left: 1rem;
+    margin-right: 1rem;
+    list-style: none;
+    
+    
+}
+.nava{
+    margin-right: 2rem;
+}
+.name{
+    font-size: 100px;
+    color: rgb(255, 204, 74);
+    padding-left: 5rem;
+
+
+    
+}
+
+#namedis{
+    padding-left: 5rem;
+    margin-top: 1rem;
+    font-size: larger;
+    padding-bottom: 50px;
+    width: 400px;
+    color: #ffffff
+}
+
+
+#info1{
+    margin-top: 0.5rem;
+}
+.face{
+    margin-top: 10rem;
+    width: 600px;
+    border-radius: 20px;
+    box-shadow: 2px -1px 10px 10px rgba(0, 0, 0, 0.42);
+    transform: skew(2deg, 0deg);
+    
+    
+    
+    
+    
+    
+}
+.flexbox{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    
+}
+.item{
+    display: block;
+    box-sizing: border-box;
+    width: 33.33%;
+}
+.content{
+   padding: 16px;
+   
+}
+.content > img{
+    width: 250px;
+    
+}
+.content > p{
+    color: white;
+    
+}
+.abi{
+    margin: 0 auto;
+    align-items: center;
+}
+.box{
+    padding-bottom: 3rem;
+    padding-top: 3rem;
+    text-align: center;
+    background:#3d3d3d
+}
+.box > h1{
+    font-size: 60px;
+    color: white;
+    padding-bottom: 5rem;
+}
+.dis{
+    font-size: 19px;
+    padding: 2rem;
+    color: rgb(100, 100, 100);
+    background-color: rgb(211, 211, 211);
+    text-align: center;
+
+}
+.dis p:hover{
+    
+    color: black;
+}
+
+
+
+
+
+
+
+.flexboxintro{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    
+}
+.itemintro{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    display: block;
+    box-sizing:border-box;
+    padding: 20px;
+}
+#namedis{
+    font-size: 25px;
+}
+
+
+
+
+
+
+
+
+.flexboxjob{
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    transition: opacity  0.5s ease-in;
+    
+    
+}
+.flexboxjob.hide{
+    opacity: 0;
+}
+.itemjob{
+    
+    box-sizing: border-box;
+    width: 33.33%;
+}
+.contentjob > img{
+    width: 350px;
+    transition: width 0.1s ease-in;
+    border-radius: 5% ;
+
+}
+.contentjob{
+    color: rgb(0, 0, 0);
+   
+    margin: 10%;
+    
+    border-radius: 2%;
+
+    
+}
+
+.job{
+    height: 800px;
+    /* background: red; */
+    padding-top: 5rem;
+    text-align: center;
+    background-image: url('./image/back.jpg');
+}
+
+.job >h1{
+
+    padding-left: 1rem;
+    text-align: left;
+    font-size: 70px;
+    
+}
+.contentjob >p {
+    font-size: larger;
+    
+}
+.contentjob > img:hover{
+    width: 400px;
+}
+.button{
+    background-color: black;
+    border: 0px;
+    color: white;
+    padding: 20px;
+    margin-top: 20px;
+    border-radius: 30px;
+    font-family: Kanit;
+    font-size: 17px;
+    transition:   0.1s ease-in-out ;
+    transition-property: background-color,color;
+}
+#button1:hover{
+    color: black;
+    background-color: rgb(181, 117, 255);
+}
+#button2:hover{
+    color: black;
+    background-color: rgb(255, 97, 97);
+}
+#button3:hover{
+    color: black;
+    background-color: rgb(255, 218, 52);
+}
+.jobcontainer{
+    
+    display: none;
+    align-items: center;
+    justify-content: center;
+    background-color: rgba(0,0,0,0.3);
+    position: fixed;
+    top: 0;
+    left: 0;
+    height: 100vh;
+    width: 100vw;
+    z-index: 900;
+}
+#jobcontainer1.showcontent{
+    display: flex;
+}
+#jobcontainer2.showcontent{
+    display: flex;
+}
+#jobcontainer3.showcontent{
+    display: flex;
+}
+.jobbox{
+    background-color: white;
+    width: 600px;
+    max-width: 100%;
+    padding: 2rem;
+    text-align: center;
+    border-radius: 10px;
+    font-size: 25px;
+}
+.close{
+    border: 0;
+    font-family: Kanit;
+    margin-top: 2rem;
+    font-size: 25px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    bottom: 0;
+}
+.Youtube{
+    color: white;
+    background-color: rgb(255, 110, 110);
+    border: 0;
+    font-family: Kanit;
+    margin-top: 2rem;
+    margin-left: 5px;
+    font-size: 25px;
+    padding: 5px 25px;
+    border-radius: 10px;
+    bottom: 0;
+    text-decoration: none;
+}
+
+
+
+
+figure > img{
+    float: left;
+    width: 600px;
+    
+}
+.flexboxfondness{
+    background-image: url('./image/back.jpg');
+}
+.contentfondnessh{
+    width: 600px;
+    height: 600px;
+    margin-left: auto;
+    margin-right: auto;
+    margin-top: 50px;
+    overflow: hidden;
+    box-shadow: 2px -1px 10px 10px rgba(0, 0, 0, 0.42);
+    
+    border-radius: 20px;
+}
+.contentfondnessh > figure{
+    position: relative;
+    margin: 0px;
+    left: 0px;
+    animation: Nest 20s infinite linear;
+
+}   
+@keyframes Nest{
+    0%{top: 0%;}
+    7%{top: 0%;}
+    14%{top: -100%;}
+    21%{top: -100%;}
+    28%{top: -200%;}
+    35%{top: -200%;}
+    42%{top: -300%;}
+    49%{top: -300%;}
+    56%{top: -400%;}
+    63%{top: -400%;}
+    70%{top: -500%;}
+    77%{top: -500%;}
+    84%{top: -600%;}
+    91%{top: -600%;}
+    98%{top: -700%;}
+    100%{top: -700%;}
+}
+
+
+
+
+.flexboxfondness{
+    height: 900px;
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    transition: opacity  0.5s ease-in;
+
+}
+.fondness{
+    text-align: center;
+    font-size: 70px;
+    color: rgb(0, 0, 0);
+    
+    
+}
+.contentfondness >p{
+    
+    text-align: center;
+    font-size: 25px;
+    padding: 3rem;
+    width: 700px;
+    color: rgb(95, 95, 95);
+    border-bottom: 1px solid black;
+    
+    transition: color 0.2s ease-in-out;
+}
+.contentfondness >p:hover{
+    color: rgb(0, 0, 0);
+}
+.itemfondness{
+    
+    display: flex;
+    box-sizing: border-box;
+    flex-direction: row;
+    flex-wrap: wrap;
+    justify-content: center;
+    align-items:center;
+    display: block;
+    box-sizing:border-box;
+    padding: 80px;
+}
+
+
+
+
+
+
+.itemheart{
+    
+    color: white;
+    background-color: #3d3d3d ; 
+    height: 500px;
+    
+    transition: 0.1s ease-in-out ;
+    transition-property:background-image,font-size ;
+    text-align: center;
+    
+
+
+}
+.itemheart:hover{
+    font-size: 18px;
+    background-image: linear-gradient(90deg, rgba(25, 136, 247, 1) 0%, rgba(247, 25, 136, 1) 100%);
+}
+.contentheart > p{
+    font-size: 20px;
+    padding: 1.5rem;
+
+}
+.contentheart{
+        
+    padding: 1rem;
+    padding-top: 3rem;
+    position: relative;
+    margin:  0 auto;
+    width: 700px;
+    
+    border-bottom: 1px solid white;
+
+
+}
+
+
+footer{
+    margin-top: 1rem;
+    text-align: center;
+    height: 200px;
+    font-size: 20px;
+}
+#contact{
+    padding-bottom: 1rem;
+}
+
+    </style>
+    
+</head>
+<body>
+
+
+    
+            <div class="navinfo">
+                
+                <a href="#child"><img class="go" src="image/Master Logo_KMUTT_Thai PNG.png"></a>
+                <div class="bar">
+                    <i class="fa-solid fa-bars" id="tag"></i>
+                </div>
+                <nav >
+                    <a href="#Whoami" class="nava"><b>ผมคือใคร</b></a>
+                    <a href="#box" class="nava"><b>ภาษาที่เคยเรียน</b></a>
+                    <a href="#job" class="nava"><b>งานอดิเรก</b></a>
+                    <a href="#flexboxfondness" class="nava"><b>ทำไมถึงชอบพัฒนาเว็บ?</b></a>
+                    <a href="#itemheart" class="nava"><b>ความในใจ</b></a>
+                    <a href="#footer" class="nava"><b>ติดต่อ</b></a>
+                </nav>
+            </div>
+            
+   
+    
+        
+
+
+
+
+        <div id="Whoami">
+            <img src="image/545484.PNG" alt="" id="videoBG">
+
+            <div class="flexboxintro">
+                <div class="itemintro">
+                    <div class="contentintro">
+                         <img class="face" src="image/face2.jpg" >
+                    </div>
+                </div>
+                <div class="itemintro">
+                    <div class="contentintro">
+                        <h1 class="name">ผมคือใคร  !!!</h1> 
+                        <p id="namedis">สวัสดีครับผมชื่อ นายรักษิต <br> รุ่งรัตนไชย ชื่อเล่นชื่อ เนสท์ เกิดวันที่ 28 พฤษภาคม 2548 อายุ 17 ปี ปัจจุบันศึกษาอยู่ชั้นมัธยมศึกษาปีที่ 6 แผนการเรียน วิทย์-คณิต โรงเรียนกาญจนาภิเษกวิทยาลัย นครปฐม (พระตำหนักสวนกุหลาบมัธยม) และการพัฒนาเว็บคือสิ่งที่ผมรัก </p>
+                    </div>
+                </div>   
+            </div>
+        </div>
+
+
+
+        
+ 
+
+
+
+
+    <div class="box" id="box"> 
+        <h1 class="language">
+            ภาษาที่เคยเรียน
+        </h1>
+    <div class="flexbox">
+        <div class="item">
+            <div class="content">
+                <img src="image/c.png">
+                
+            </div>
+        </div>
+        <div class="item">
+            <div class="content">
+                <img src="image/csss.png">
+                
+            </div>
+        </div>
+        <div class="item">
+            <div class="content">
+                <img src="image/htmlll.png">
+                
+            </div>
+        </div>   
+        <div class="item">
+            <div class="content">
+                <img src="image/java.png">
+                
+            </div>
+        </div>
+        <div class="item">
+            <div class="content">
+                <img src="image/js.png">
+                
+            </div>
+        </div>
+        <div class="item">
+            <div class="content">
+                <img src="image/python.png">
+                
+            </div>
+        </div>   
+    </div>
+</div> 
+<div class="dis">
+    <p>สิ่งที่ผมได้เรียนรู้มาเป็นเพียงพื้นฐานเท่านั้นครับ ผมหวังว่าจะได้โอกาสที่จะให้ผมได้เรียนรู้กับอาจารย์ภายในสาขาวิชาวิทยาการคอมพิวเตอร์ประยุกต์ ภาควิชาคณิตศาสตร์ คณะวิทยาศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี และผมจะนำความรู้ที่ได้ไปพัฒนาเว็บไซต์ให้ดีขึ้นอย่างแน่นอนครับ </p>
+</div>
+    
+
+
+
+
+
+<div class="job" id="job">
+    <h1 >
+        งานอดิเรก
+    </h1>
+    <div class="flexboxjob" >
+        <div class="itemjob" >
+            <div class="contentjob">
+                <img src="image/programlogo.png">
+                <p>
+                    เขียนโปรแกรม
+                </p>
+                <button class="button" id="button1">อ่านเพิ่มเติม</button>
+            </div>
+        </div>
+        <div class="itemjob" >
+            <div class="contentjob">
+                <img src="image/Tisgar.png">
+                <p >
+                    Youtube channel
+                </p>
+                <button class="button" id="button2">อ่านเพิ่มเติม</button>
+            </div>
+        </div>
+        <div class="itemjob" >
+            <div class="contentjob">
+                <img src="image/booklogo.png">
+                <p>
+                    อ่านหนังสือ
+                </p>
+                <button class="button" id="button3" >อ่านเพิ่มเติม</button>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+
+<div class="jobcontainer" id="jobcontainer1">
+     <div class="jobbox">
+        <h1>
+            Coding
+        </h1>
+        <p>
+            หลังจากที่ผมค้นพบว่าผมชอบเขียนโปรแกรมและจะเรียนต่อในสาขานี้ ผมจึงเริ่มศึกษาและฝึกเขียนโปรแกรมในเวลาว่าง รวมถึงการหางานที่ผมชื่นชอบในสายงานด้านคอมพิวเตอร์ และผมก็ได้ค้นพบว่าสิ่งที่ผมชอบนั้น คือการพัฒนาเว็บ
+        </p>
+
+        <button class="close" id="close1">
+            ปิด
+        </button>
+     </div>               
+</div>
+
+
+<div class="jobcontainer" id="jobcontainer2">
+    <div class="jobbox">
+        <h1>
+            Tisgar TV
+        </h1>
+        <p>
+            การทำคลิปวิดีโอลงช่อง Youtube ก็เป็นอีกกิจกรรมที่ผมทำเป็นงานอดิเรกเช่นกันแต่ช่วงนี้ผมอาจจะไม่ได้ทำบ่อยเนื่องจากมีเรื่องเรียนและเรื่องเข้ามหาวิทยาลัยมา ทำให้เวลาว่างผมน้อยลงแต่ในอนาคตผมน่าจะมาสานต่อช่องของผมและอาจจะเพิ่ม content ใหม่ๆภายในช่องแน่นอนครับ
+        </p>
+
+       <button class="close" id="close2">
+           ปิด
+       </button>
+       <a class="Youtube" id="Youtube" href="https://www.youtube.com/c/TisgarTV" target="_blank">
+         Youtube
+    </a>
+    </div>               
+</div>
+
+
+<div class="jobcontainer" id="jobcontainer3">
+    <div class="jobbox">
+        <h1>
+            อ่านหนังสือ
+        </h1>
+        <p>
+            ช่วงเวลานี้ส่วนใหญ่ผมก็จะใช้เวลาไปกับการอ่านหนังสือทั้งเตรียมตัวสอบเข้ามหาวิทยาลัยและหาความรู้เพิ่มเติมเพื่อให้ผมมีพื้นฐานมากพอที่จะสามารถเรียนต่อในระดับอุดมศึกษาได้อย่างมีประสิทธิภาพและพัฒนาตัวเองได้เร็วมากยิ่งขึ้นครับ
+        </p>
+
+       <button class="close" id="close3">
+           ปิด
+       </button>
+    </div>               
+</div>
+
+
+
+
+
+
+
+
+
+
+
+
+<div class = "web">
+    <div class="flexboxfondness" , id="flexboxfondness">
+        <div class="itemfondness">
+            <div class="contentfondnessh">
+                <figure >    
+                    <img  src="image/Fondness.jpg" >
+                    <img  src="image/foundness2.jpg">
+                    <img  src="image/foundness3.jpg">
+                    <img  src="image/foundness4.jpg">
+                    <img  src="image/foundness5.jpg">
+                    <img  src="image/foundness6.jpg">
+                    <img  src="image/foundness7.jpg">
+                    <img  src="image/Fondness.jpg">
+                    
+                </figure>
+            </div>
+        </div>
+        <div class="itemfondness">
+            <div class="contentfondness">
+                <h1 class="fondness">ทำไมชอบพัฒนาเว็บ</h1> 
+                <p> ก่อนผมจะเริ่มเขียนโค้ด ผมถนัดการทำงานกราฟิกมาก่อนแต่เมื่อผมรู้จักการเขียนโค้ดผมก็คิดว่าจะมีวิธีไหนที่จะนำทั้ง 2 อย่างนั่นคือการ Coding และ Graphic design มาผนวกรวมกันจนกระทั่งผมได้รู้จักกับการพัฒนาเว็บไซต์ รวมถึง UX/UI designer และ Game developer ซึ่งผมรู้เลยว่านี่แหละทางที่ผมตามหา ซึ่งหลังจากที่ผมได้รู้แล้วว่าผมชอบอะไรผมก็เริ่มศึกษาการพัฒนาเว็บ อย่างจริงจังจนผมพัฒนาเว็บไซต์นี้ขึ้นมาได้แต่สิ่งที่ผมได้เรียนรู้อาจจะยังเป็นเพียงพื้นฐานซึ่งผมคิดว่าความรู้ที่ผมมีจะสามารถต่อยอดพัฒนาได้ในอนาคต
+                </p>
+                
+            </div>
+        </div>   
+    </div>
+</div>
+
+
+
+
+
+
+        <div class="itemheart" id="itemheart">
+            <div class="contentheart">
+                <h1 class="nameheart">ความในใจจากผม</h1> 
+                <p> สวัสดีครับ ก่อนอื่นเว็บไซต์ที่ท่านอาจารย์เห็นผมตั้งใจทำมันออกมามากๆเลยครับถึงแม้บางส่วนอาจจะยังไม่สมบูรณ์หรือขาดตกบกพร่องตรงไหน ผมขออภัยมา ณ ที่นี้ด้วยนะครับ ผมได้เรียนรู้อะไรหลายอย่างมากๆเลยครับกับการทำเว็บไซต์ในครั้งนี้ซึ่ง ยิ่งทำให้ผมค้นพบว่าผมชอบและรักการพัฒนาเว็บไซต์จริงๆ ผมอยากเข้าศึกษาต่อที่สาขาวิชาวิทยาการคอมพิวเตอร์ประยุกต์ ภาควิชาคณิตศาสตร์ คณะวิทยาศาสตร์ มหาวิทยาลัยเทคโนโลยีพระจอมเกล้าธนบุรี เพื่อพัฒนาความสามารถในการพัฒนาเว็บของผมและความสามารถอื่นๆ ในด้านคอมพิวเตอร์ และในอนาคตผมอยากจะสร้างบางสิ่งบางอย่างเพื่อช่วยเหลือสังคมและสร้างประโยชน์ให้กับมหาวิทยาลัยครับ </p>
+            </div>
+        </div>  
+        
+        
+
+
+        <footer id="footer">
+            <h1 id = "contact">ติดต่อ</h1>
+            <p><i class="fa-brands fa-facebook"></i> Nest Rung</p>
+            <p><i class="fa-solid fa-envelope"></i> rugsit.nest@gmail.com</p>
+            <p><i class="fa-solid fa-phone"></i> 081-916-9452</p>
+        </footer>
+    
+        
+<script>
+    var navinfo = document.querySelector('.navinfo')
+var job  = document.querySelector('.flexboxjob')
+var lastScrolly = 0;
+
+window.addEventListener('scroll' , () =>{
+if (window.scrollY > lastScrolly) {
+    navinfo.classList.add('hide');
+}
+else{
+    navinfo.classList.remove('hide');
+}
+
+lastScrolly = window.scrollY;
+})
+
+window.addEventListener('scroll' , () =>{
+if(window.scrollY > 1600){
+    job.classList.remove('hide');
+}
+else{
+    job.classList.add('hide');
+}
+})
+
+const bar = document.querySelector('.bar > i')
+bar.onclick =()=>{
+    const menu = document.querySelector('nav');
+    menu.classList.toggle('show')
+}
+
+const nav = document.querySelector('nav')
+nav.onclick =()=>{
+    const menunav = document.querySelector('nav')
+    menunav.classList.toggle('show')
+}
+const button1 = document.querySelector('#button1')
+const button2 = document.querySelector('#button2')
+const button3 = document.querySelector('#button3')
+const content = document.querySelector('#jobcontainer1')
+const content2 = document.querySelector('#jobcontainer2')
+const content3 = document.querySelector('#jobcontainer3')
+const close = document.querySelector("#close1")
+const close2 = document.querySelector("#close2")
+const close3 = document.querySelector("#close3")
+button1.addEventListener('click' , () => {
+    
+    content.classList.add('showcontent')
+})
+
+close.addEventListener('click' , () => {
+    content.classList.remove('showcontent')
+})
+
+
+
+button2.addEventListener('click' , () => {
+    
+    content2.classList.add('showcontent')
+})
+
+close2.addEventListener('click' , () => {
+    content2.classList.remove('showcontent')
+})
+
+
+
+
+button3.addEventListener('click' , () => {
+    
+    content3.classList.add('showcontent')
+})
+
+close3.addEventListener('click' , () => {
+    
+    content3.classList.remove('showcontent')
+
+
+})
+
+
+
+
+
+
+
+</script>
+<style>
+   @media screen and ( max-width: 1050px){
+        .title >h1{
+            font-size: 130px;
+            
+        }
+    }
+            
+        
+        @media screen and (max-width: 472px){
+        .menu li a{
+            display: none;
+        }
+        
+        }
+        @media screen and (max-width: 1055px){
+        .contenthead{
+        font-size: smaller;
+        }
+        .contenthead > h1{
+            font-size: 30px;
+        }
+        }
+        
+        @media screen and (max-width: 900px){
+        .navinfo a{
+           font-size: smaller;
+           margin-left: 0.5rem;
+           margin-right: 0.5rem;
+        }
+        }
+        @media screen and (max-width: 1000px){
+        .item{
+           width: 50%;
+        }
+        }
+        @media screen and (max-width: 850px){
+        
+        .item{
+           width: 100%;
+        }
+        .content >img{
+            width: 30%;
+        }
+        
+        .contentintro > img{
+            width: 400px;
+        }
+        
+        }
+
+    
+
+
+        @media screen and (max-width: 1136px){
+        
+        .name{
+           font-size: 50px;
+        }
+        }
+        @media screen and (max-width: 1200px){
+        
+        .itemjob{
+           width: 50%;
+        }
+        .job{
+            height: 1200px;
+        }
+        .job > h1{
+            text-align: center;
+            font-size: 50px;
+        }
+        }
+        @media screen and (max-width: 1251px){
+        #Whoami{
+            padding-bottom: 15rem;
+        }
+
+
+        }
+        @media screen and (max-width: 850px){
+        #Whoami{
+            padding-bottom: 0rem;
+        }
+        .itemjob{
+           width: 100%;
+        }
+        .job{
+            height: 1800px;
+        }
+        }
+
+
+
+        
+
+
+        
+        @media screen and (max-width: 1000px){
+        .contentfondness > p {
+            width: 500px;
+        }
+        }
+        @media screen and (max-width: 760px){
+        .contentfondness > p {
+            margin: 0 auto;
+            width: 300px;
+            
+        }
+        }
+        @media screen and (max-width: 760px){
+        .contentfondnessh {
+            width: 400px;
+            height: 400px;
+        }
+        figure > img{
+            width: 400px;
+        }
+        }
+        @media screen and (max-width: 690px){
+        .title > h1 {
+            font-size: 100px;
+        }
+        }
+        @media screen and (max-width: 1050px){
+        #tag {
+             margin-right: 2rem;
+            display:block;
+        }
+        nav{
+            position:absolute;
+            width: 100%;
+            text-align: center;
+            background-color: rgb(255, 255, 255,0.6);
+            margin-top: 330px;
+            opacity: 0%;
+            display: none;
+            
+            transition: opacity 0.2s ease-in-out
+        }
+        nav >a{
+            display: flex;
+            flex-direction: column;
+            padding: 10px 25px;
+            
+            margin: 0;
+
+        }
+        nav > a:hover{
+            background: rgba(82, 82, 82, 0.1);
+        }
+        .show{
+            display: block;
+            opacity: 100%;
+        }
+        }
+        @media screen and (max-width: 1716px){
+        .flexboxfondness{
+            height: 1500px;
+        }
+        .itemfondness{
+            padding-top: 5px;
+        }
+        }
+        
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+        @media screen and (max-width: 620px){
+        nav{
+            margin-top: 23rem;
+        }
+        #tag{
+            top: 3rem;
+            right: 1rem;
+            position: absolute;
+            
+        }
+        .nava{
+            
+            padding-top: 0.5rem;
+        }
+        .nava b{
+            font-size: 1rem;
+            
+        }
+        
+       
+        
+        .item{
+           width: 100%;
+        }
+        .content >img{
+            width: 30%;
+        }
+        
+        .contentintro > img{
+            width: 300px;
+        }
+        .fondness{
+          font-size: 55px;
+        }
+        #namedis{
+            width: 300px;
+        }
+        .nameheart{
+           
+        }
+        .contentheart {
+            text-align: center;
+            width: 300px;
+        }
+        #namedis{
+            padding-left: 0rem;
+        }
+        .itemheart{
+            height: 800px;
+        }
+        .contentfondnessh{
+           
+            width: 300px;
+            
+        }
+        .name{
+            padding-left: 0px;
+        }
+        .contentintro{
+            text-align: center;
+        }
+        .jobbox{
+            width: 300px;
+        }
+        .jobbox > p{
+            font-size: 20px;
+        }
+        .contentfondness > p{
+            
+            font-size: 11px;
+        }
+        #namedis{
+            font-size: 12px;
+        }
+        .contentheart >p{
+            font-size: 17px;
+        }
+        .dis >p{
+            font-size: 15px;
+        }
+        
+        
+        }
+
+
+
+
+
+
+        @media screen and (max-width: 820px){
+        .job{
+            height: 1900px;
+        }
+        .contentfondness >p{
+            font-size: 19px;
+        }
+        #namedis{
+            font-size: 19px;
+        }
+        .contentheart >p{
+            font-size: 17px;
+        }
+        .dis >p{
+            font-size: 15px;
+        }
+        
+        
+        
+        }
+        
+
+</style>
+
+</body>
+</html>
